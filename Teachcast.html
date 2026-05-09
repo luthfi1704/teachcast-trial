@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daftar trial TeachCast - Kuasai Bahasa Inggris lebih lancar & percaya diri dengan kurikulum Oxford">
+    <title>Trial TeachCast - Sponsorship</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="Teachcast.css">
+</head>
+<body class="gradient-bg">
+
+    <!-- ========== WELCOME SECTION ========== -->
+    <section id="welcomeSection" class="page-section active">
+        <header class="container header-content">
+            <span class="badge">
+                <i class="fas fa-star"></i> Exclusive Sponsorship Trial
+            </span>
+            <h1 class="hero-title">
+                Kuasai Bahasa Inggris <br>
+                <span class="text-highlight">Lebih Lancar & Percaya Diri</span>
+            </h1>
+            <p class="hero-description">
+                TeachCast adalah aplikasi berbasis bahasa Inggris yang dirancang khusus untuk membantu Anda 
+                <strong>melancarkan percakapan</strong> dan <strong>mengetahui sejauh mana kemampuan</strong> 
+                bahasa Inggris Anda secara akurat dan menyenangkan.
+            </p>
+        </header>
+
+        <main class="container main-content">
+            <!-- Benefits Cards -->
+            <div class="benefits-grid">
+                <article class="benefit-card">
+                    <div class="benefit-icon bg-indigo">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Melancarkan Speaking</h3>
+                    <p>Latihan intensif untuk meningkatkan kefasihan berbicara dalam situasi nyata.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon bg-emerald">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Cek Kemampuan</h3>
+                    <p>Ketahui level bahasa Inggris Anda melalui sistem penilaian yang terukur.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon bg-amber">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Kurikulum Oxford</h3>
+                    <p>Materi pembelajaran berkualitas tinggi yang diakui secara internasional.</p>
+                </article>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="cta-wrapper">
+                <button id="btnStartRegistration" class="btn btn-primary btn-lg">
+                    Mulai Pendaftaran Trial
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="cta-note">Program terbatas untuk periode sponsorship</span>
+            </div>
+        </main>
+    </section>
+
+    <!-- ========== FORM SECTION ========== -->
+    <section id="formSection" class="page-section">
+        <!-- Sticky Progress Header -->
+        <header class="form-header">
+            <div class="container form-header-content">
+                <button id="btnBack" class="btn-icon" aria-label="Kembali">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="form-title">Formulir Pendaftaran</span>
+                <div class="progress-indicator" aria-hidden="true">
+                    <span class="progress-step active"></span>
+                    <span class="progress-step active"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="container form-content">
+            <!-- Form Card -->
+            <form id="registrationForm" class="form-card" novalidate>
+                <h2 class="form-section-title">
+                    <i class="fas fa-user-edit"></i> Data Pendaftar
+                </h2>
+                
+                <div class="form-group">
+                    <label for="inputName" class="form-label">Nama Lengkap <span class="required">*</span></label>
+                    <input 
+                        type="text" 
+                        id="inputName" 
+                        name="name"
+                        placeholder="Masukkan nama sesuai identitas"
+                        class="form-input"
+                        required
+                        autocomplete="name"
+                        aria-required="true"
+                    >
+                    <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="form-label">Alamat Gmail <span class="required">*</span></label>
+                    <input 
+                        type="email" 
+                        id="inputEmail" 
+                        name="email"
+                        placeholder="contoh@gmail.com"
+                        class="form-input"
+                        required
+                        autocomplete="email"
+                        aria-required="true"
+                        pattern="^[^@]+@gmail\.com$"
+                        title="Gunakan Gmail pribadi (@gmail.com)"
+                    >
+                    <span class="form-hint">Gunakan email pribadi untuk aktivasi kode trial</span>
+                    <span class="form-error" id="emailError"></span>
+                    
+                    <!-- Warning Alert -->
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>PERINGATAN:</strong> Dilarang menggunakan Gmail kampus (misal: @students.upnvyk.ac.id). 
+                        Gunakan <strong>Gmail pribadi</strong> (@gmail.com) agar kode trial aktif.</p>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Video Tutorial -->
+            <section class="video-section">
+                <h2 class="form-section-title">
+                    <i class="fas fa-play-circle"></i> Video Panduan
+                </h2>
+                <p class="section-description">Tonton video ini agar Anda tidak bingung saat proses aktivasi kode unik nanti.</p>
+                
+                <a 
+                    href="https://drive.google.com/file/d/1Ul7ru-IxEhky_C5Y4GcpaJ1104lfAbuQ/view?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="video-thumbnail"
+                    aria-label="Tonton video panduan aktivasi"
+                >
+                    <img 
+                        src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000&auto=format&fit=crop" 
+                        alt="Ilustrasi tutorial aktivasi TeachCast" 
+                        class="video-image"
+                        loading="lazy"
+                    >
+                    <span class="video-play-btn" aria-hidden="true">
+                        <i class="fas fa-play"></i>
+                    </span>
+                </a>
+
+                <!-- Steps -->
+                <div class="steps-list">
+                    <h3 class="steps-title">Alur Mendapatkan Kode:</h3>
+                    <ol class="steps-ordered">
+                        <li>
+                            <span class="step-number">1</span>
+                            <span>Isi data di atas & tonton video tutorial.</span>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <span>Klik tombol hijau di bawah untuk menghubungi Admin via WhatsApp.</span>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <span>Admin akan memberikan <strong>Kode Unik</strong> khusus untuk Anda.</span>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <button id="btnSubmit" type="button" class="btn btn-whatsapp btn-lg btn-block">
+                <span class="btn-text">LANJUTKAN MENERIMA KODE</span>
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            
+            <footer class="form-footer">
+                <p>Authorized by <strong>Luthfi Aufaa</strong></p>
+            </footer>
+        </main>
+    </section>
+
+    <!-- ========== MODALS ========== -->
+    
+    <!-- Error Modal -->
+    <dialog id="errorModal" class="modal" aria-labelledby="modalErrorTitle">
+        <div class="modal-content">
+            <div class="modal-icon error">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 id="modalErrorTitle">Validasi Gagal</h3>
+            <p id="errorMsg" class="modal-message"></p>
+            <button id="btnCloseError" class="btn btn-secondary">Perbaiki Data</button>
+        </div>
+    </dialog>
+
+    <!-- Success Modal (Optional Enhancement) -->
+    <dialog id="successModal" class="modal" aria-labelledby="modalSuccessTitle">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 id="modalSuccessTitle">Berhasil!</h3>
+            <p class="modal-message">Anda akan diarahkan ke WhatsApp untuk menyelesaikan pendaftaran.</p>
+            <button id="btnCloseSuccess" class="btn btn-primary">Lanjut ke WhatsApp</button>
+        </div>
+    </dialog>
+
+    <!-- Scripts -->
+    <script src="Teachcast.js" defer></script>
+</body>
+</html>
